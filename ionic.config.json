@@ -1,0 +1,7 @@
+{
+  "name": "Locateu",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
