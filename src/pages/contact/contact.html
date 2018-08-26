@@ -1,17 +1,36 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
     <ion-title>
       Contact
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <ion-label>Call police</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Call EC1</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Call EC2</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
     </ion-item>
   </ion-list>
+
+  <ion-fab bottom right>
+    <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>
+
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="add"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>

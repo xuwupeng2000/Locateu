@@ -22,4 +22,9 @@ export class RestapiProvider {
       .map(res => res.json());
   }
 
+  loginUser(userParams) {
+    return this.http.post(`${this.baseUrl}/user_tokens`, userParams)
+      .map(res => res.json());
+  }
+
 }
